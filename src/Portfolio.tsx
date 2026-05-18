@@ -310,10 +310,12 @@ const Tools = () => {
 const Portfolio = () => {
   const projects = [
     {
-      title: "Flashy Reels Edit",
-      category: "Short-form Editing",
-   video: "/videos/4.mp4",
-    },
+    
+  title: "Flashy Reels Edit",
+  category: "Short-form Editing",
+  video: "/4.mp4"
+
+    }
     {
       title: "Documentary Edit",
       category: "Storytelling Content",
@@ -364,13 +366,13 @@ const Portfolio = () => {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="group relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10"
           <video
-  src={project.video}
+   src={project.video}
   autoPlay
   muted
   loop
   controls
   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
->
+/>
 </video>
     
            
