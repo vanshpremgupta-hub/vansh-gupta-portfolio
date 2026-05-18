@@ -1,0 +1,8 @@
+{
+  "name": "Vansh Gupta Portfolio",
+  "description": "Premium modern portfolio for Vansh Gupta, a professional video editor specializing in cinematic short-form content and high-retention social media edits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
