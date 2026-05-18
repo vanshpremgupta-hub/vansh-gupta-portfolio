@@ -312,7 +312,7 @@ const Portfolio = () => {
     {
       title: "Flashy Reels Edit",
       category: "Short-form Editing",
-      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=600",
+   video: "/videos/4.mp4",
     },
     {
       title: "Documentary Edit",
