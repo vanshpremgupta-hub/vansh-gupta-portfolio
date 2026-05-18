@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => {
   base: '/vansh-gupta-portfolio/',
   const env = loadEnv(mode, '.', '');
   return {
