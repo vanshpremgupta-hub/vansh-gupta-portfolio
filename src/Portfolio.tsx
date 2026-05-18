@@ -313,9 +313,9 @@ const Portfolio = () => {
     
   title: "Flashy Reels Edit",
   category: "Short-form Editing",
-  video: "/4.mp4"
+  video: "/4.mp4",
 
-    }
+
     {
       title: "Documentary Edit",
       category: "Storytelling Content",
