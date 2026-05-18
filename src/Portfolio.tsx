@@ -363,8 +363,7 @@ const Portfolio = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="group relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10"
-            >
-             <video
+          <video
   src={project.video}
   autoPlay
   muted
@@ -373,6 +372,7 @@ const Portfolio = () => {
   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
 >
 </video>
+    
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
               
