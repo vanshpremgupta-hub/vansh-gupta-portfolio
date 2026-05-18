@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Space Grotesk", sans-serif;
+  
+  --color-gold-light: #F9E79F;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #C5A028;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased selection:bg-gold/30;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-button {
+    @apply px-8 py-4 rounded-full font-medium transition-all duration-300;
+  }
+
+  .gold-button-primary {
+    @apply bg-gold text-black hover:bg-gold-light hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(212,175,55,0.4)];
+  }
+
+  .gold-button-outline {
+    @apply border border-gold/50 text-gold hover:bg-gold/10 hover:border-gold hover:scale-105 active:scale-95;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
