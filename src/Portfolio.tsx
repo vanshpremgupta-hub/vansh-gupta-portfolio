@@ -368,7 +368,6 @@ const Portfolio = () => {
                 <video
                   src={project.video}
                   autoPlay
-                  muted
                   loop
                   controls
                   playsInline
