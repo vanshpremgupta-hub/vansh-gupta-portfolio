@@ -364,14 +364,20 @@ const Portfolio = () => {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="group relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10"
             >
-              {project.video ? (
-                <video
-                  src={project.video}
-                  autoPlay
-                  loop
-                  controls
-                  playsInline
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+             {project.video ? (
+  <video
+    src={project.video}
+    controls
+    playsInline
+    preload="metadata"
+    className="relative z-20 w-full h-full object-cover"
+  />
+) : (
+  <img
+    src={project.image}
+    alt={project.title}
+    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+    referrerPolicy="no-referrer"
                 />
               ) : (
                 <img
