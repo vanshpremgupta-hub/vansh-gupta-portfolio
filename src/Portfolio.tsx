@@ -365,7 +365,7 @@ const Portfolio = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="group relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10"
-</motion.div>         
+></motion.div>         
          <video
   src={project.video}
   autoPlay
