@@ -315,7 +315,7 @@ const Portfolio = () => {
   category: "Short-form Editing",
   video: "/4.mp4",
 
-
+    },
     {
       title: "Documentary Edit",
       category: "Storytelling Content",
