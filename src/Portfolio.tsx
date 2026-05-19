@@ -367,9 +367,6 @@ const Portfolio = () => {
               {project.video ? (
                 <video
                   src={project.video}
-                  autoPlay
-               
-                  loop
                   controls
                   playsInline
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
