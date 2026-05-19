@@ -356,48 +356,49 @@ const Portfolio = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-           <motion.div
-  key={project.title}
-  initial={{ opacity: 0, scale: 0.95 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  viewport={{ once: true }}
-  transition={{ delay: index * 0.1, duration: 0.5 }}
->
-  <div className="group relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10">
-
-    {project.video ? (
-      <video
-        src={project.video}
-        controls
-        playsInline
-        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
-      />
-    ) : (
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
-        referrerPolicy="no-referrer"
-      />
-    )}
-
-    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
-
-    <div className="absolute inset-0 p-8 flex flex-col justify-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-
-      <span className="text-gold text-xs font-bold tracking-widest uppercase mb-2">
-        {project.category}
-      </span>
-
-      <h4 className="text-2xl font-display font-bold text-white mb-4">
-        {project.title}
-      </h4>
-
-    </div>
-
-  </div>
-
-</motion.div>
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="group relative rounded-3xl overflow-hidden aspect-[4/3] border border-white/10"
+            >
+              {project.video ? (
+                <video
+                  src={project.video}
+                  autoPlay
+                  muted
+                  loop
+                  controls
+                  playsInline
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+                />
+              ) : (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+                  referrerPolicy="no-referrer"
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+              
+              <div className="absolute inset-0 p-8 flex flex-col justify-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <span className="text-gold text-xs font-bold tracking-widest uppercase mb-2">
+                  {project.category}
+                </span>
+                <h4 className="text-2xl font-display font-bold text-white mb-4">
+                  {project.title}
+                </h4>
+                <div className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <button className="gold-button-primary p-3 rounded-full">
+                    <Play size={20} fill="currentColor" />
+                  </button>
+                  <span className="text-sm font-medium">Watch Preview</span>
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
