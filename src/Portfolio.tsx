@@ -313,7 +313,7 @@ const Portfolio = () => {
     
   title: "Flashy Reels Edit",
   category: "Short-form Editing",
-  video: "/4.mp4",
+  video: "public/4.mp4",
 
     },
     {
