@@ -319,7 +319,7 @@ const Portfolio = () => {
     {
       title: "Flashy Reels Edit",
       category: "Short-form Editing",
-      video: "/4.mp4",
+      video: "/flashy-reel.mp4",
     },
     {
       title: "Documentary Edit",
@@ -337,12 +337,12 @@ const Portfolio = () => {
       image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=600",
     },
     {
-      title: "5. Podcast",
+      title: " Podcast",
       category: "Clipping from podcast",
-      image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=600",
+      video:"/podcast.mp4",
     },
     {
-      title: "6. Reels",
+      title: " Reels",
       category: "Creator Content",
       image: "https://images.unsplash.com/photo-1611162618071-b39a2ad0f7ef?auto=format&fit=crop&q=80&w=600",
     },
