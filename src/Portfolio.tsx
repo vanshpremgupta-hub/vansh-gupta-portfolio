@@ -375,6 +375,7 @@ const Portfolio = () => {
                 <video
                   src={project.video}
                   autoPlay
+                  muted
                   loop
                   playsInline
                   preload="metadata"
