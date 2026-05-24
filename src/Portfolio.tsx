@@ -329,7 +329,7 @@ const Portfolio = () => {
     {
       title: "Personal Brand Video",
       category: "Creator Content",
-      image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=600",
+      video: "/Video-196.mp4",
     },
     {
       title: "UGC Ad Campaign",
