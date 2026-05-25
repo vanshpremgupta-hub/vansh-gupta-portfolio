@@ -398,12 +398,20 @@ const Portfolio = () => {
                 <h4 className="text-2xl font-display font-bold text-white mb-4">
                   {project.title}
                 </h4>
-                <div className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <button className="gold-button-primary p-3 rounded-full">
-                    <Play size={20} fill="currentColor" />
-                  </button>
-                  <span className="text-sm font-medium">Watch Preview</span>
-                </div>
+                <a
+  href={project.video}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+>
+  <div className="gold-button-primary p-3 rounded-full">
+    <Play size={20} fill="currentColor" />
+  </div>
+
+  <span className="text-sm font-medium">
+    Watch Preview
+  </span>
+</a>
               </div>
             </motion.div>
           ))}
